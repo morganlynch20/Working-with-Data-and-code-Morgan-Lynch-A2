@@ -27,38 +27,46 @@ User can listen to the project by pressing the play button as shown below:
 
 
 Compositions:
-Composition 1
 
+Composition 1:
 Description: original piece using more classical elements such as keys
-Musical Techniques Used: [List any specific music theory elements, such as melody, harmony, rhythm, etc.]
-Python Concepts Used: Simple coding used [Describe relevant coding concepts, e.g., loops, conditionals, functions]
-Composition 2
+Python Concepts Used: Simple coding used as first composition was slightly simpler, beats duration adjusted slightly.
 
+
+<img width="1153" alt="Screen Shot 2024-10-28 at 8 22 08 pm" src="https://github.com/user-attachments/assets/64a19e18-ad47-4cba-aa59-4be3b9303ac0">
+
+Composition 2:
 Description: pop inspired composition
-Musical Techniques Used: [List any specific music theory elements]
-Python Concepts Used: [Describe relevant coding concepts]
-Composition 3
+Python Concepts Used: More complex coding with some loops, rests and fast forward features.
 
-Description: [Briefly describe what this composition sounds like and its inspiration]
-Musical Techniques Used: [List any specific music theory elements]
+<img width="1139" alt="Screen Shot 2024-10-28 at 8 23 37 pm" src="https://github.com/user-attachments/assets/06786c65-8146-4e8f-a754-e0f4bdbf1962">
+
+
+Composition 3: 
+Description: Techno/ Trance composition
 Python Concepts Used: [Describe relevant coding concepts]
 
-Problem or Challenge Addressed
+
+
+Problem or Challenge Addressed:
 This project aims to explore and experiement with Tunepad's different algorithmic functions in order to create different compositions in genre and style with different rhythms and harmonies.
 
 
 Usage:
-
 Running Code: User can access or listen to the code by pressing the play button in the top right of the site/screen. 
 
-Reflection and Learning Outcomes
+
+Reflection and Learning Outcomes:
 This project has been an exploration of how coding and music intersect, providing a platform to experiment with Tunepad's coding environment for creative expression. By applying coding principles to music, it allows for users to undertand the variety of spectrum of features on Tunepad in the purpose for code literacy.
+
 
 Project status:
 Project is: complete
 
+
 Room for improvement:
-Adding more complex features to the different compositions. 
+Adding more complex features to the different compositions e.g more rewind or fast forward, rests, and extending length of compositions. 
+
 
 
 Acknowledgements:
