@@ -1,0 +1,321 @@
+Composition 1 python code:
+
+#two different notes played in groups of four, duration of half a beat 
+playNote(84, beats= 0.5)
+playNote(84, beats= 0.5)
+playNote(84, beats=0.5)
+playNote(84, beats= 0.5)
+playNote(86, beats= 0.5)
+playNote(86, beats=0.5)
+playNote(86, beats=0.5)
+playNote(86, beats=0.5)
+playNote(84, beats=0.5)
+playNote(84, beats=0.5)
+playNote(84, beats=0.5)
+playNote(84, beats=0.5)
+playNote(86, beats=0.5)
+playNote(86, beats=0.5)
+playNote(86, beats=0.5)
+playNote(86, beats=0.5)
+
+
+#two different notes playing in sequence of (6,3,6,3,6)
+playNote(8)
+playNote(8)
+playNote(8)
+playNote(8)
+playNote(8)
+playNote(8)
+playNote(2)
+playNote(2)
+playNote(2)
+playNote(8)
+playNote(8)
+playNote(8)
+playNote(8)
+playNote(8)
+playNote(8)
+playNote(2)
+playNote(2)
+playNote(2)
+playNote(8)
+playNote(8)
+playNote(8)
+playNote(8)
+playNote(8)
+playNote(8)
+
+
+
+#two different notes playing in sequence 1,2,1,2,1,1,2,1,2,1,2
+playNote(76)
+playNote(72)
+playNote(76)
+playNote(72)
+playNote(76)
+playNote(76)
+playNote(72)
+playNote(76)
+playNote(72)
+playNote(76)
+playNote(72)
+
+# one note playing for 3 beats
+playNote(33)
+playNote(33)
+playNote(33)
+
+# 1 note with duration of one beat, repeated for three beats
+playNote(5,beats=1 )
+playNote(5, beats=1)
+playNote(5, beats=1)
+
+# 3 different notes with pattern of 1,1,2,2,3,3,2,2
+playNote(36, beats=0.5)
+playNote(36, beats=0.5)
+playNote(43, beats=0.5)
+playNote(43, beats=0.5)
+playNote(48, beats=0.5)
+playNote(48, beats=0.5)
+playNote(43, beats=0.5)
+playNote(43, beats=0.5)
+
+
+Composition 2:
+
+# nine notes of different pitches but same duration
+playNote(32) 
+playNote(32)
+playNote(34)
+playNote(32)
+playNote(32)
+playNote(34)
+playNote(32)
+playNote(32)
+playNote(34)
+
+
+#two notes ( 6 and 0) played for duration of one beat
+playNote(6)
+playNote(0)
+playNote(6)
+playNote(0)
+playNote(6)
+playNote(0)
+playNote(6)
+playNote(0)
+
+
+#Different notes with duration of half a beat, rest 1 beat inbetween
+playNote(35, beats=0.5)
+playNote(35, beats=0.5)
+rest(1)
+playNote(35, beats=0.5)
+playNote(35, beats=0.5)
+rest(1)
+playNote(35, beats=0.5)
+playNote(35, beats=0.5)
+
+
+#looping of code 4 times 
+for i in range(4):
+    playNote(0)
+    fastForward(0.5)
+    playNote(0, beats = 0.5, velocity = 40)
+
+
+#first code( loop four times) notes 1 and 11, rewind for half a beat, note 0 for half a beat with soft velocity) 
+for i in range(4):
+    playNote([1, 1])
+    rewind(0.5)
+    playNote(0, beats = 0.5, velocity = 40)
+
+moveTo(0)
+for i in range(2):
+    rest(1)
+    playNote(2)
+
+moveTo(0)
+for i in range(4): 
+    playNote(4, beats = 0.5, velocity = 50)
+    rest(0.5)
+
+
+#notes 10 and 5, with half a beat and relatively low velocity of 40 
+playNote(10, beats = 0.5)
+playNote(5, beats=0.5, velocity=40)
+playNote(10,beats=0.5)
+playNote(5, beats=0.5,velocity=40)
+playNote(10, beats=0.5)
+playNote(5, beats=0.5,velocity=40)
+playNote(10, beats=0.5)
+playNote(5, beats=0.5, velocity=40)
+
+
+
+# Progression of Dminor, Aminor7,Dminor,Gsus24 and A minor 7 again, played for duration of half a beat with rests of half a beat or 0.25 creating dynamic rhythm
+Dmin = [ 50, 53, 57 ]
+Amin7 = [ 55, 57, 60, 64 ]
+Gsus24 = [ 55, 57, 60, 62 ]
+
+# play two D minor chords
+playNote(Dmin, beats = 0.5)
+rest(0.5)
+playNote(Dmin, beats = 0.5)
+rest(0.25)
+
+playNote(Amin7, beats = 0.25)
+rest(0.5)
+playNote(Amin7, beats = 0.25)
+rest(0.25)
+
+playNote(Dmin, beats = 0.5)
+rest(0.5)
+playNote(Dmin, beats = 0.5)
+rest(0.25)
+
+playNote(Gsus24, beats = 0.5)
+rest(0.25)
+playNote(Gsus24, beats = 0.5)
+rest(0.25)
+
+playNote(Amin7, beats = 0.25)
+rest(0.5)
+playNote(Amin7, beats = 0.25)
+rest(0.25)
+
+
+
+Compositon 3:
+
+
+#Note 2 with velocity of 40 and rest of two beats 
+playNote(2, velocity=40)
+playNote(2,velocity=40)
+playNote(2,velocity=40)
+playNote(3,velocity=40)
+rest(2)
+playNote(2, velocity=40)
+playNote(2,velocity=40)
+playNote(2,velocity=40)
+playNote(3,velocity=40)
+rest(2)
+
+
+#note 22, velocity 50, rest of one beat 
+playNote(22, velocity=50)
+playNote(22,velocity=50)
+playNote(21,velocity=50)
+playNote(21,velocity=50)
+playNote(22,velocity=50)
+playNote(22,velocity=50)
+rest(1)
+playNote(22,velocity=50)
+playNote(22,velocity=50)
+playNote(21,velocity=50)
+playNote(21,velocity=50)
+playNote(22,velocity=50)
+playNote(22,velocity=50)
+
+
+#note 2 and 3, played in group of 3 sets , velocity of 60
+playNote(2, velocity=60)
+playNote(2, velocity=60)
+playNote(2, velocity=60)
+playNote(3, velocity=60)
+playNote(3, velocity=60)
+playNote(3, velocity=60)
+playNote(2, velocity=60)
+playNote(2, velocity=60)
+playNote(2, velocity=60)
+playNote(3, velocity=60)
+playNote(3, velocity=60)
+playNote(3, velocity=60)
+
+
+# Note 2 and 3, velocity of 30
+playNote(2, velocity=30)
+playNote(2, velocity=30)
+playNote(2,velocity=30)
+playNote(3,velocity=30)
+playNote(3,velocity=30)
+
+
+#Note 48 and 50 played consecutively after each other in group of 6 , for half a beat, velocity of 40 with rest of one beat 
+playNote(48, beats=0.5, velocity=40)
+playNote(50, beats=0.5,velocity=40)
+playNote(48, beats=0.5,velocity=40)
+playNote(50, beats=0.5,velocity=40)
+playNote(48, beats=0.5,velocity=40)
+playNote(50, beats=0.5,velocity=40)
+rest(1)
+playNote(48, beats=0.5,velocity=40)
+playNote(50, beats=0.5,velocity=40)
+playNote(48, beats=0.5,velocity=40)
+playNote(50, beats=0.5,velocity=40)
+playNote(48, beats=0.5,velocity=40)
+playNote(50, beats=0.5,velocity=40)
+rest(1)
+playNote(48, beats=0.5,velocity=40)
+playNote(50, beats=0.5,velocity=40)
+playNote(48, beats=0.5,velocity=40)
+playNote(50, beats=0.5,velocity=40)
+playNote(48, beats=0.5,velocity=40)
+playNote(50, beats=0.5,velocity=40)
+rest(1)
+playNote(48, beats=0.5,velocity=40)
+playNote(50, beats=0.5,velocity=40)
+playNote(48, beats=0.5,velocity=40)
+playNote(50, beats=0.5,velocity=40)
+playNote(48, beats=0.5,velocity=40)
+playNote(50, beats=0.5,velocity=40)
+rest(1)
+
+
+#Note 34 and 36 played for two beats each in group of four, with rest of one beat and fast forward of one beat
+playNote(34)
+playNote(34)
+playNote(36)
+playNote(36)
+rest(1)
+fastForward(1)
+playNote(34)
+playNote(34)
+playNote(36)
+playNote(36)
+rest(1)
+fastForward(1)
+playNote(34)
+playNote(34)
+playNote(36)
+playNote(36)
+
+
+#Note 34 repeat loop of four, fast forward of half a beat, note 34 played again for half a beat, velocity of 60
+for i in range(4):
+    playNote(34)
+    fastForward(0.5)
+    playNote(34, beats = 0.5, velocity = 60)
+
+
+# Note 34 played for half a beat repeated
+playNote(34, beats=0.5)
+playNote(34,beats=0.5)
+playNote(34, beats=0.5)
+playNote(34,beats=0.5)
+playNote(34, beats=0.5)
+playNote(34,beats=0.5)
+playNote(34, beats=0.5)
+playNote(34,beats=0.5)
+
+
+#Note 25 played in group of 2 beats with velocity of 70, with rest of two beats in between
+playNote(25, velocity=70)
+playNote(25, velocity=70)
+rest(2)
+playNote(25,velocity=70)
+playNote(25,velocity=70)
+rest(2)
+playNote(25,velocity=70)
+playNote(25,velocity=70)
+
